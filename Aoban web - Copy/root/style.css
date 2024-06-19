@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdf9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: Top-Left;
+    justify-content: Top-Left;
+    height: 100vh;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin : 0;
+    padding : 0;
+    background : lightsteelblue;
+    width : 150px;
+    font : 1.25em sans-serif;
+    justify-content: top left;
+}
+
+li a {
+    display : block;
+    text-align : center;
+    text-decoration: none;
+    color : Black;
+    padding : 10px;
+}
+
+li a.current { background : cornflowerblue}
+li a:hover { background : RoyalBlue ; color : white ; }
+
+@media screen and ( min-width:600px ) {
+
+    ul { overflow : hidden ; width : 100% ; }
+    li a { float : left; }
+}
+
